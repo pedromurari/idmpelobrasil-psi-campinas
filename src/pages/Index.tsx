@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { EnrollmentForm } from "@/components/EnrollmentForm";
 import { PillarCard } from "@/components/PillarCard";
 import { FAQItem } from "@/components/FAQItem";
-import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { StudentGallery } from "@/components/StudentGallery";
 import { Accordion } from "@/components/ui/accordion";
 import rodrygoMurari from "@/assets/rodrygo-murari.jpg";
@@ -142,8 +141,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      <TestimonialsSection />
 
       <section className="md:py-8 relative z-10 px-[15px] py-[5px]">
         <div className="section-container">

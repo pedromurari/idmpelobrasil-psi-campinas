@@ -55,19 +55,6 @@ export const StudentGallery = () => {
               Veja momentos reais das nossas turmas presenciais - participantes
               certificados e transformados!
             </p>
-
-            <div className="max-w-sm mx-auto mb-8">
-              <div className="aspect-[9/16] w-full rounded-xl overflow-hidden border-2 border-primary/20 shadow-lg">
-                <iframe
-                  className="w-full h-full"
-                  src="https://www.youtube.com/embed/b3Wkb1eNHzs"
-                  title="Depoimentos de participantes"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                />
-              </div>
-            </div>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
