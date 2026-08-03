@@ -15,8 +15,26 @@ import fotoSp1 from "@/assets/gallery-sp/foto1.jpeg";
 import fotoSp3 from "@/assets/gallery-sp/foto3.jpeg";
 import fotoSp4 from "@/assets/gallery-sp/foto4.jpeg";
 import fotoSp5 from "@/assets/gallery-sp/foto5.jpeg";
+import novo1 from "@/assets/gallery-novas/novo1.jpeg";
+import novo2 from "@/assets/gallery-novas/novo2.jpeg";
+import novo3 from "@/assets/gallery-novas/novo3.jpeg";
+import novo4 from "@/assets/gallery-novas/novo4.jpeg";
+import novo5 from "@/assets/gallery-novas/novo5.jpeg";
+import novo6 from "@/assets/gallery-novas/novo6.jpeg";
+import novo7 from "@/assets/gallery-novas/novo7.jpeg";
+import novo8 from "@/assets/gallery-novas/novo8.jpeg";
+import novo9 from "@/assets/gallery-novas/novo9.jpeg";
 
 const photos = [
+  { src: novo1, alt: "Participantes do ultimo evento presencial" },
+  { src: novo2, alt: "Participantes do ultimo evento presencial" },
+  { src: novo3, alt: "Participantes do ultimo evento presencial" },
+  { src: novo4, alt: "Participantes do ultimo evento presencial" },
+  { src: novo5, alt: "Participantes do ultimo evento presencial" },
+  { src: novo6, alt: "Participantes do ultimo evento presencial" },
+  { src: novo7, alt: "Participantes do ultimo evento presencial" },
+  { src: novo8, alt: "Participantes do ultimo evento presencial" },
+  { src: novo9, alt: "Participantes do ultimo evento presencial" },
   { src: fotoSp1, alt: "Turma completa com Rodrygo Murari" },
   { src: fotoSp3, alt: "Participante com certificado ao lado de Rodrygo Murari" },
   { src: fotoSp4, alt: "Participante com certificado ao lado de Rodrygo Murari" },
