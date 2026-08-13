@@ -32,8 +32,21 @@ export default async function handler(req: Request) {
       testCode 
     } = body;
 
-    const PIXEL_ID = process.env.META_PIXEL_ID || '1165211125501519';
-    const ACCESS_TOKEN = process.env.META_ACCESS_TOKEN;
+    // Remove BOM/caracteres invisiveis que podem vir de copy-paste nas
+    // env vars da Vercel (causava erro "Object with ID ... does not exist"
+    // mesmo com token e pixel corretos - visto no projeto Santos).
+    const INVISIBLE_CODEPOINTS = [0x200b, 0x200c, 0x200d, 0xfeff];
+    function sanitize(v: string | undefined): string | undefined {
+      if (!v) return v;
+      let out = v;
+      for (const code of INVISIBLE_CODEPOINTS) {
+        out = out.split(String.fromCharCode(code)).join('');
+      }
+      return out.trim();
+    }
+
+    const PIXEL_ID = sanitize(process.env.META_PIXEL_ID) || '1165211125501519';
+    const ACCESS_TOKEN = sanitize(process.env.META_ACCESS_TOKEN);
 
     if (!ACCESS_TOKEN) {
       console.error('ERRO: META_ACCESS_TOKEN não configurado');
